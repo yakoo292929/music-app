@@ -31,9 +31,9 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isPlay, setIsPlay] = useState(false);
   const [popularSongs, setPopularSongs] = useState([]);
+  const [searchedSongs, setSearchedSongs] = useState();
   const [selectedSong, setSelectedSong] = useState();
   const [keyword, setKeyword] = useState('');
-  const [searchedSongs, setSearchedSongs] = useState();
   const [page, setPage] = useState(1);
   const [hasPrev, setHasPrev] = useState(false);
   const [hasNext, setHasNext] = useState(false);

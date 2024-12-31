@@ -13,7 +13,6 @@
 
 import axios from "axios";
 
-
 class SpotityClient {
 
   static async initialize() {
@@ -43,12 +42,12 @@ class SpotityClient {
   //-----------------------------------------//
   async getPopularSongs() {
 
-    const response = await axios.get("https://api.spotify.com/v1/playlists/37i9dQZF1DX9vYRBO9gjDe/tracks",
+    const response = await axios.get("https://api.spotify.com/v1/playlists/5SLPaOxQyJ8Ne9zpmTOvSe",
       {
         headers: { Authorization: "Bearer " + this.token },
       }
     );
-    return response.data;
+    return response.data.tracks;
 
   }
 
